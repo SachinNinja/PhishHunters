@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Phish Hunter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="HTML5 website template" />
+    <meta name="keywords" content="global, template, html, sass, jquery" />
+    <meta name="author" content="Sachin Upadhyay" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}">
+  </head>
+  <body>
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+      <a class="device-notification--logo" href="#0">
+        <img src="assets/img/logo.png" alt="Global" />
+        <p>The Phish Hunter</p>
+      </a>
+      <p class="device-notification--message">
+        The Website is not supported for small devices , kindly switch to
+        desktop mode
+      </p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+      <div class="container">
+        <div class="outer-nav--return"></div>
+        <div id="viewport" class="l-viewport">
+          <div class="l-wrapper">
+            <header class="header">
+              <a class="header--logo" href="#0">
+                <img class='logo' src="{{ url_for('static', filename='img/hunter.png') }}" alt="Global" />
+                <p>The Phish Hunter</p>
+              </a>
+              <button class="header--cta cta">Be Phish Free</button>
+              <div class="header--nav-toggle">
+                <span></span>
+              </div>
+            </header>
+            <nav class="l-side-nav">
+              <ul class="side-nav">
+                <li class="is-active"><span>Home</span></li>
+                <li><span>Info</span></li>
+                <li><span>About</span></li>
+                <li><span>Report Links</span></li>
+                <li><span>Hunt the Phish</span></li>
+              </ul>
+            </nav>
+            <ul class="l-main-content main-content">
+              <li class="l-section section section--is-active">
+                <div class="intro">
+                  <div class="intro--banner">
+                    <h1>Trust<br />only<br />the<span style="color: blue"> Hunters</span></h1>
+                    <button class="cta">
+                      Be Phish Free
+                      <svg
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 150 118"
+                        style="enable-background: new 0 0 150 118"
+                        xml:space="preserve"
+                      >
+                        <g
+                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
+                        >
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="btn-background"></span>
+                    </button>
+                    <img
+                      src="{{ url_for('static', filename='img/hacker-removebg-preview.png') }}"
+                      alt="Welcome"
+                    />
+                  </div>
+              </li>
+              <li class="l-section section">
+                <div class='info'>
+                <h1>What we do ?</h1>
+                <p>
+                Welcome to The Phish Hunters, your go-to platform for efficient phishing detection. With the increasing prevalence of online scams and fraudulent activities, it has become imperative to safeguard yourself and your sensitive information. Our website is dedicated to providing you with cutting-edge tools and resources to identify and combat phishing attempts effectively. Stay one step ahead of cybercriminals with our comprehensive solutions and proactive approach.<br> Discover the power of phishing detection at The Phish Hunters and protect yourself from online threats<br><p style="color:blue; font-size:35px"> Happy Hunting</p>
+  
+              </p> 
+            </div>
+              </li>
+              <li class="l-section section">
+                <div class="about">
+                  <div class="about--banner">
+                    <h2>We<br />believe in<br />Finding<br />Harmful links
+                    <h2 style="font-size: 40px"> Team Members : </h2>
+                    <h3>1. Sachin    2. Abhinav     3. Rohit      4. Gurnain      5. Sunder     6. Aishwarya </h3>
+                    </div>
+                </div>
+              </li>
+              <li class="l-section section form2">
+                <form action="/submit" method="post" class="contact-form">
+                <h1>Report Link</h1>
+                <div class="form-group">
+                  <label for="name">Source</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Link</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Reason</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Report</button>
+              </form>
+             </li>
+              <li class="l-section section main" >
+                <div class="hire">
+                    <div class="work-request--information">
+                      <div class="information-name">
+                        <form class='form' method='POST' action='/check'>
+                        <input id="link" name='link' type="text"/>
+                        <label for="link">Enter Link</label>
+                        <button type='submit' id='submit'>Check Link</button>
+                        </form>
+                      </div>
+                </div>
+              </div>
+                <div class='text'>
+                <h1> Afraid of <br><span style="color: red">Malicious links</span> ?<br>We got you Protected !<br></h1> 
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="outer-nav">
+        <li class="is-active">Home</li>
+        <li>Info</li>
+        <li>About</li>
+        <li>Report Links</li>
+        <li>Hunt the Phish</li>
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write('<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+    </script>
+    <script src="{{ url_for('static', filename='js/functions-min.js') }}"></script>
+  </body>
+</html>

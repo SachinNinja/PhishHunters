@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dffbb7;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top:150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2ecc71;
+}
+
+.checkmark-icon {
+  width: 80px;
+  animation: rotate 1s infinite;
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #2ecc71;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #27ae60;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

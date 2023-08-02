@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/malicious.css') }}">
+  <title>Phishing Detection</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Phishing link Detected</h1>
+    <img class='warning-icon' src="{{ url_for('static', filename='img/danger.png') }}" alt="Global" />
+    <a href="/" class="home-link">Go back to Home</a>
+  </div>
+</body>
+</html>

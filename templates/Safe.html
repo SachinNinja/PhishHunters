@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/safe.css') }}">
+  <title>Link Safety Check</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Link Safety Check</h1>
+     <img class='checkmark-icon' src="{{ url_for('static', filename='img/tick.png') }}" alt="Global" />
+    <p class="message">The link you entered is safe!</p>
+    <a href="/" class="home-link">Go back to Home</a>
+  </div>
+</body>
+</html>
